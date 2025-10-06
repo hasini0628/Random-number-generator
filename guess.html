@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Guessing Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f0f8ff;
+      padding-top: 100px;
+    }
+    h1 {
+      color: #007bff;
+    }
+    input, button {
+      padding: 8px 12px;
+      margin: 8px;
+      font-size: 16px;
+    }
+    #result {
+      margin-top: 15px;
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎯 Guess the Number (1–100)</h1>
+  <input type="number" id="guess" placeholder="Enter your guess">
+  <button onclick="checkGuess()">Check</button>
+  <p id="result"></p>
+
+  <script>
+    let randomNum = Math.floor(Math.random() * 100) + 1;
+
+    function checkGuess() {
+      let guess = Number(document.getElementById("guess").value);
+      let result = document.getElementById("result");
+
+      if (!guess) {
+        result.textContent = "Please enter a number!";
+      } 
+      else if (guess > 100) {
+        alert("⚠️ Please enter a number less than or equal to 100!");
+      } 
+      else if (guess < randomNum) {
+        result.textContent = "Too low! Try again.";
+      } 
+      else if (guess > randomNum) {
+        result.textContent = "Too high! Try again.";
+      } 
+      else {
+        result.textContent = `🎉 Correct! The number was ${randomNum}`;
+        setTimeout(() => {
+          alert("🎮 Starting a new game!");
+          randomNum = Math.floor(Math.random() * 100) + 1; // reset the game
+          result.textContent = "";
+          document.getElementById("guess").value = "";
+        }, 800);
+      }
+    }
+  </script>
+</body>
+</html>

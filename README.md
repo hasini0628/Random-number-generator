@@ -14,3 +14,9 @@ Features:
  Restart button to play again.
  Attempts counter.
  Works on all browsers.
+
+Project Structure:
+ Guess-the-Number-Game
+ │── random.html    
+ │── random.css     
+ │── random.js   

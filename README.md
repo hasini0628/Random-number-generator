@@ -6,3 +6,11 @@ Technologies Used:
  HTML
  CSS
  JavaScript
+
+Features:
+ Random number generated between 1–100 each round.
+ Simple and clean UI styled with CSS.
+ Real-time feedback (“Too high”, “Too low”, “Correct!”).
+ Restart button to play again.
+ Attempts counter.
+ Works on all browsers.

@@ -20,3 +20,13 @@ Project Structure:
  │── random.html    
  │── random.css     
  │── random.js   
+
+How to Play:
+ Enter any number between 1 and 100.
+ Click "Guess".
+ The game will tell you if your guess is:
+ 🔺 Too High
+ 🔻 Too Low
+ 🎉 Correct!
+ Attempts will increase every time.
+ Click Restart to play again!

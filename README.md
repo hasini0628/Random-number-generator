@@ -30,3 +30,10 @@ How to Play:
  🎉 Correct!
  Attempts will increase every time.
  Click Restart to play again!
+
+Installation & Run Locally
+ git clone https://github.com/hasini0628e/guess-the-number.git
+ cd guess-the-number
+
+Then simply open:
+random.html in any browser.

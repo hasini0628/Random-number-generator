@@ -37,3 +37,10 @@ Installation & Run Locally
 
 Then simply open:
 random.html in any browser.
+
+Future Enhancements:
+ Difficulty levels
+ Scoreboard
+ Sound effects
+ Timer system
+ Dark mode

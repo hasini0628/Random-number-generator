@@ -44,3 +44,6 @@ Future Enhancements:
  Sound effects
  Timer system
  Dark mode
+
+ License:
+  You may use, modify, or distribute this project freely under the MIT License.
